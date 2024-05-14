@@ -6,7 +6,7 @@ def count_lines(file_name):
 		counter = 0
 		for i in range(count):
 			counter += 1
-			line_list[i] = f'Строка номер {counter} файла номер {file_name[0]}   {line_list[i][:-1]}'
+			line_list[i] = f'Строка номер {counter} файла номер {file_name[0]}   {line_list[i].rstrip()}'
 		line_list.insert(0, file_name)
 		line_list.insert(1, str(count))
 	result[count] = line_list
